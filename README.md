@@ -15,11 +15,11 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 # Things I've used for the application. 
- > I've used ReactJS framework to develop this small fintech application page.
- > I've used Material-UI for the design template.
- > I've used SCSS for the writing css code. 
- > I've applied layout reponsiveness for screen 1035px to above.
- > I've used Create React App (CRA) for the project environment.
+ > I've used ReactJS framework to develop this small fintech application page,
+ > used Material-UI for the design template,
+ > used SCSS for the writing css code,
+ > I've applied layout reponsiveness for screen 1035px to above,
+ > used Create React App (CRA) for the project environment.
  # Thought Process. 
  > Firstly i've analyzed the whole design to choose layout component which could be reusable.
  > I've made the folder and file structure such a way that multiple team can work together on the same project in different files and folder.
