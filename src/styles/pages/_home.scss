@@ -1,0 +1,139 @@
+.main {
+  width: 100%;
+  min-height: 42vh;
+  display: flex;
+  margin-top: 107px;
+  background-color: $primary-color;
+
+  .container {
+    padding: 0 4.6875rem;
+    margin: auto;
+    display: flex;
+    color: $color-white;
+    margin-top: 64px;
+    flex-direction: column;
+    
+    .mainInfo {
+      padding-right: 1rem;
+      h3 {
+        font-size: 2rem;
+        font-family: $montserrat-font;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0.24rem;
+      }
+      p {
+        font-family: $roboto-font;
+        max-width: 40.6875rem;
+        word-wrap: break-word;
+        width: 100%;
+        letter-spacing: 0.18rem;
+        line-height: 2;
+        font-size: 1.25rem;
+        text-align: left;
+        font-weight: 300;
+      }
+    }
+
+    .wallet {
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+      .container {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+.action-activity-container {
+  padding: 0 4.6875rem;
+
+  margin-top: 150px;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    .action {
+      flex: 30%;
+
+      h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.31rem;
+        font-family: $montserrat-font;
+        font-weight: 500;
+        padding-bottom: 22px;
+      }
+      .action-card-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .recent-activity {
+      flex: 70%;
+      h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.31rem;
+        font-family: $montserrat-font;
+        font-weight: 500;
+        padding-bottom: 22px;
+      }
+      .recent-activity-container {
+        display: flex;
+        flex-wrap: wrap;
+        .MuiList-root.makeStyles-root-1.MuiList-padding {
+          .MuiTabs-root {
+            .MuiTabs-scroller.MuiTabs-fixed {
+              .PrivateTabIndicator-root-4.PrivateTabIndicator-colorSecondary-6.MuiTabs-indicator {
+                background-color: #e5edf9;
+
+              }
+
+              .MuiTabs-flexContainer {
+                background-color: #e5edf9;
+                color: Gray;
+                width: 326px;
+                border-radius: 4px;
+               
+
+                .MuiButtonBase-root.MuiTab-root.MuiTab-textColorInherit.Mui-selected {
+                  padding: 10px 10px;
+                  text-transform: capitalize;
+                  .MuiTab-wrapper {
+                    padding: 10px 25px;
+                    border-radius: 4px;
+
+                    background: #ffffff;
+                  }
+
+                  .MuiTabs-scroller {
+                    position: none;
+                    display: none;
+                  }
+                }
+                .MuiButtonBase-root.MuiTab-root.MuiTab-textColorInherit {
+                  border-radius: 4px;
+                  padding: 10px 10px;
+                  text-transform: capitalize;
+                  .MuiTab-wrapper {
+                    padding: 10px 25px;
+                    border-radius: 4px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

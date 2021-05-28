@@ -1,0 +1,65 @@
+.walletCard {
+    height: 10.625rem;
+    width: 21.875rem;
+    justify-content: space-around;
+    background: linear-gradient(180deg, #f2eef7 0%, #ffffff 100%);
+    box-shadow: 3px 3px 12px #00000029;
+    -moz-box-shadow: 3px 3px 12px #00000029;
+    -webkit-box-shadow: 3px 3px 12px #00000029;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1.875rem 0;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .cardBg {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 25.5625rem;
+      .add {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $primary-color;
+          font-weight: 500;
+      }
+      .MuiButtonBase-root.MuiButton-root.MuiButton-text {
+        .MuiButton-label {
+          font-size: 12px !important;
+          text-transform: capitalize !important;
+          letter-spacing: 0.08rem !important;
+        }
+      }
+      .cardImg {
+        width: 90px;
+        height: 90px;
+        align-self: flex-end;
+      }
+
+      .info {
+        h3 {
+          // margin: 0.9375rem 0 0 0;
+          text-align: center;
+          letter-spacing: 0.17375rem;
+          color: $color-dark;
+          font-size: 1.25rem;
+          font-family: $roboto-font;
+          padding-bottom: 8px;
+        }
+
+        p {
+          padding-top: 18px;
+          font-size: 0.8125rem;
+          color: $color-lighter-gray;
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          color: $color-dark;
+        }
+      }
+    }
+  }

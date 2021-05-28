@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@import './styles/global';
+@import './styles/components/button';
+@import './styles/layouts/header';
+@import './styles/pages/home',
+  './styles/layouts/footer',
+  './styles/components/action-card',
+  './styles/components/wallet-card';
+
+

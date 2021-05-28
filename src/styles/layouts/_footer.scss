@@ -1,0 +1,135 @@
+.footer {
+  width: 100%;
+  height: 26.25rem;
+  color: #333333;
+  position: relative;
+  background-color: $background-color;
+
+  padding: 40px 4.6875rem;
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    p {
+      font-size: 13px;
+      font-family: $roboto-font;
+      font-weight: 400;
+    }
+  }
+  .container {
+    background-color: $color-white;
+    // padding: 5rem 12.625rem 4.375rem 12.625rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 300px;
+    padding-left: 95px;
+    h2 {
+      color: #333333;
+      margin-bottom: 1.375rem;
+      font-weight: 400;
+      font-size: 1.3125rem;
+    }
+    .abstract-design {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      cursor: pointer;
+
+      img {
+        height: 300px;
+        width: 455px;
+
+      }
+    }
+    .footerCard {
+      z-index: 1000;
+
+      width: 100%;
+      max-width: 33%;
+      height: 16.875rem;
+      .mobile-screen {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+
+          img {
+            height: 100%;
+
+          }
+        
+      }
+
+      &.cardone {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .footerLogo {
+          color: #333333;
+          h3 {
+            margin-top: 66px;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+          img {
+            height: 68%;
+            width: 90%;
+
+          }
+
+          p {
+            width: 100%;
+            font-size: 1rem;
+            text-align: left;
+            font-family: $roboto-font;
+            font-weight: 400;
+            margin: 0.625rem 0 0 0;
+          }
+        }
+
+        .icons {
+          display: flex;
+          justify-content: flex-start;
+          padding-bottom: 77px;
+
+
+          .box {
+            height: 2.625rem;
+            color: $color-white;
+            margin-right: 12px;
+
+            cursor: pointer;
+
+            i {
+              margin: auto;
+              &:hover {
+                color: $color-orange;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+  html {
+    font-size: 80%;
+  }
+  .footer.container.footerCard.cardone.icons {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1450px) and (max-width: 1680px) {
+  html {
+    font-size: 80%;
+  }
+}

@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap);
+
+html {
+    font-size: 100%;
+    }
+    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container,
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+$montserrat-font: 'Montserrat', sans-serif;
+$roboto-font: 'Roboto', sans-serif;
+$lora-font: 'Lora', serif;
+
+$color-white: #fff;
+$color-black: #000;
+$color-dark-blue: #1e365a;
+$color-great-dark-blue: #3c516f;
+$color-great-dark-orange: #26221d;
+$color-darker-gray: #707070;
+$color-pink: #ed0f69;
+$color-orange: #f49512;
+$color-lighter-orange: #fadcb7;
+$color-light-shade-orange: #febc61;
+$color-light-orange: #fff6ee;
+$color-hightlight-orange: #fffbee;
+$orange-highlight: #fffbf3;
+$color-yellow-orange: #FCD257;
+$color-gray:#AAAAAA;
+$color-matte: #504F4B;
+$color-soft-yellow: #FFFDF5;
+$color-blue: #133178;
+$primary-color: #54509D;
+$color-dark: #495057;
+$color-lighter-gray: #BCC2C9;
+$background-color:#F6F8FC;
+$theme-color: #525198;
+
+
+
+
+body {
+  background-color: $background-color;
+}
+
+$breakpoints: (
+  'mobile': 600px,
+  'tablet': 900px,
+  'desktop': 1100px,
+  'larger-display': 1680px,
+) !default;
+
+@mixin respond-to-max($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin respond-to-min($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}

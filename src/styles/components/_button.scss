@@ -1,0 +1,40 @@
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  text-transform: capitalize;
+  font-size: 0.45rem;
+  font-weight: 400;
+  transition: background 800ms, color 800ms, border 800ms;
+  border-radius: 4px;
+  font-family: $roboto-font;
+
+  &.btn-hollow {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    background-color: $color-white;
+    padding: 0.375rem 0.875rem;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $color-white;
+    }
+  }
+  &.btn-status {
+    border: 1px solid #114B39;
+    margin-top: 8px;
+    color: #114B39;
+    background-color: $color-white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: #114B39;
+        color: $color-white;
+    }
+  }
+
+
+
+}

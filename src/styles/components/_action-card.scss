@@ -1,0 +1,37 @@
+.action-card {
+  width: 160px;
+  height: 93.62px;
+  margin-right: 32px;
+  color: $color-white;
+  margin-bottom: 28px;
+  .action-card-wrapper {
+    background-color: $theme-color;
+    border-radius: 8px;
+    border: 1px solid #e9efff;
+    padding: 22px 10px 17px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .card-bg {
+      width: 32.91px;
+      height: 25.5px;
+    }
+
+    h3 {
+      margin-top: 5px;
+      text-align: center;
+      letter-spacing: 0.17375rem;
+      color: $color-white;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: $roboto-font;
+    }
+  }
+
+  .action-card-wrapper.withdraw-bg {
+    background-color: #f1b31c;
+    border-radius: 8px;
+    border: 1px solid #f1b31c;
+  }
+}
