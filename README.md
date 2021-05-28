@@ -1,7 +1,10 @@
 # Fintech Application (One Page) 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, after installing all the packages from package.json file with
+### `npm install`
+
+you can run the project with by running the command with:
 
 ### `npm start`
 
